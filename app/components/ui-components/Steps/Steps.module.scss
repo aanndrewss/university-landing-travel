@@ -1,0 +1,35 @@
+@import 'styles/scss/variables.scss';
+
+.wrapper {
+	margin-top: 301px;
+	.htag {
+		text-align: center;
+	}
+	.steps {
+		display: flex;
+		flex-direction: row;
+		gap: 160px;
+		margin-top: 40px;
+		justify-content: space-between;
+		.step {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			justify-content: center;
+			align-items: center;
+
+			.stepIcon {
+				width: 100px;
+				height: 100px;
+				background-color: $orange;
+				border-radius: 16px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.stepText {
+				color: $green;
+			}
+		}
+	}
+}

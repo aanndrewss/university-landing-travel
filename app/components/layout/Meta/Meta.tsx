@@ -26,7 +26,11 @@ const Meta: FC<MetaProps> = ({ title, description }): JSX.Element => {
 				crossOrigin='anonymous'
 			/>
 			<link
-				href='https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap'
+				href='https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,400&display=swap'
+				rel='stylesheet'
+			/>
+			<link
+				href='https://fonts.googleapis.com/css2?family=Magra:wght@700&display=swap'
 				rel='stylesheet'
 			/>
 		</Head>

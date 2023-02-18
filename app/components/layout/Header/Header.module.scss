@@ -4,7 +4,7 @@
 	background-color: rgba($color: $orange, $alpha: 0.7);
 	height: 90px;
 	width: 100%;
-	padding: 25px 25px;
+	padding: 25px $pagePadding;
 	box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 	.wrapper {
 		max-width: $maxWidth;
@@ -13,6 +13,19 @@
 		justify-content: space-between;
 		align-items: center;
 		margin: auto;
+
+		.logo {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 5px;
+
+			.logoText {
+				font-family: $magraFontFamily;
+				font-size: 32px;
+				line-height: 39px;
+			}
+		}
 
 		.headerNav {
 			display: flex;
