@@ -1,0 +1,36 @@
+@import 'styles/scss/variables.scss';
+
+.header {
+	background-color: rgba($color: $orange, $alpha: 0.7);
+	height: 90px;
+	width: 100%;
+	padding: 25px 25px;
+	box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+	.wrapper {
+		max-width: $maxWidth;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin: auto;
+
+		.headerNav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 42px;
+
+			.headerLink {
+				cursor: pointer;
+				font-family: $redHatTextFontFamily;
+				font-size: 16px;
+				line-height: 21px;
+				font-weight: 500px;
+				&:hover {
+					transition: all 0.3s;
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+}

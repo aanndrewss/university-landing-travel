@@ -1,0 +1,35 @@
+@import 'styles/scss/variables.scss';
+
+.h {
+	margin: 0;
+}
+
+.h1 {
+	font-family: $aleoFontFamily;
+	font-size: 80px;
+	line-height: 96px;
+	font-weight: 700;
+	color: $white;
+}
+
+.h2 {
+	font-family: $redHatTextFontFamily;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 53px;
+	color: $orange;
+}
+
+.h3 {
+	font-family: $aleoFontFamily;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 42px;
+}
+
+.h4 {
+	font-family: $aleoFontFamily;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+}

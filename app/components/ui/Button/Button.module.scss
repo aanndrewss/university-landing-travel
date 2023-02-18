@@ -1,0 +1,18 @@
+@import 'styles/scss/variables.scss';
+
+.button {
+	padding: 10px 30px;
+	font-size: 16px;
+	line-height: 21px;
+	background-color: $green;
+	border-radius: $borderRadius;
+	font-family: $redHatTextFontFamily;
+	font-weight: 500;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+		0px 2px 3px rgba(13, 96, 111, 0.16);
+	cursor: pointer;
+	&:hover {
+		background-color: $greenHover;
+		transition: all 0.3s;
+	}
+}
