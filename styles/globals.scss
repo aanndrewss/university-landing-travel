@@ -1,3 +1,13 @@
+@import 'styles/scss/variables.scss';
+:root {
+	--swiper-pagination-color: #f2785c;
+	--swiper-pagination-bullet-size: 20px;
+	--swiper-pagination-bullet-inactive-color: #f2785c;
+	--swiper-pagination-bullet-inactive-opacity: 0.5;
+	--swiper-pagination-bullet-opacity: 1;
+	--swiper-pagination-bullet-horizontal-gap: 8px;
+	--swiper-pagination-bottom: 10px;
+}
 * {
 	box-sizing: border-box;
 	padding: 0;

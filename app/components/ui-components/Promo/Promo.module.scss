@@ -6,7 +6,7 @@
 	flex-direction: column;
 	width: 892px;
 	gap: 46px;
-	height: 422px;
+	height: calc(100vh - 140px);
 
 	.tag {
 		font-style: italic;
