@@ -11,7 +11,7 @@ import styles from './Home.module.scss'
 const Home: FC = () => {
 	return (
 		<div className={styles.bg}>
-			<Layout title='Travel Portal' description='Made by andrxw66'>
+			<Layout title='Home' description='Made by andrxw66'>
 				<Promo />
 				<Steps />
 				<Destinations />

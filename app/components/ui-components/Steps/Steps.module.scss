@@ -1,37 +1,39 @@
 @import 'styles/scss/variables.scss';
 
-.wrapper {
+.steps {
 	margin-top: 100px;
-	max-width: $maxWidth;
-	display: flex;
-	flex-direction: column;
-	justify-items: center;
-	align-items: center;
-	.steps {
+	padding: 0 $pagePadding;
+	.wrapper {
+		max-width: $maxWidth;
 		display: flex;
-		flex-direction: row;
-		gap: 160px;
-		margin-top: 40px;
-		justify-content: space-between;
-		.step {
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		.stepsList {
 			display: flex;
-			flex-direction: column;
-			gap: 30px;
-			justify-content: center;
-			align-items: center;
-
-			.stepIcon {
-				width: 100px;
-				height: 100px;
-				background-color: $orange;
-				border-radius: 16px;
+			flex-direction: row;
+			gap: 160px;
+			margin-top: 40px;
+			.step {
 				display: flex;
+				flex-direction: column;
+				gap: 30px;
 				justify-content: center;
 				align-items: center;
-			}
-			.stepText {
-				color: $green;
-				text-align: center;
+
+				.stepIcon {
+					width: 100px;
+					height: 100px;
+					background-color: $orange;
+					border-radius: 16px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.stepText {
+					color: $green;
+					text-align: center;
+				}
 			}
 		}
 	}

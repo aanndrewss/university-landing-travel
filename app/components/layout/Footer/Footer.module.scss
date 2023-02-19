@@ -1,0 +1,40 @@
+@import 'styles/scss/variables.scss';
+
+.footer {
+	position: relative;
+
+	width: 100%;
+	padding: 11px 0 7px;
+	margin-top: -60px;
+	background-color: transparent;
+	.wrapper {
+		padding: 0 $pagePadding;
+		max-width: $maxWidth;
+		margin: 0 auto;
+		.content {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			.copyright {
+				font-family: $redHatTextFontFamily;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 21px;
+			}
+			.socials {
+				display: flex;
+				list-style: none;
+				flex-direction: row;
+				align-items: center;
+				gap: 20px;
+				.social {
+					cursor: pointer;
+					transition: all 0.2s ease-in-out;
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+	}
+}

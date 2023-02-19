@@ -5,8 +5,8 @@ import 'swiper/scss'
 import 'swiper/scss/pagination'
 import { Button } from '../../ui/Button/Button'
 import { Htag } from '../../ui/Htag/Htag'
-import styles from './Destinations.module.scss'
 import ArrowRight from './arrow-right.svg'
+import styles from './Destinations.module.scss'
 
 const destinations = [
 	{

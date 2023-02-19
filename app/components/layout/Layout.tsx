@@ -10,11 +10,9 @@ const Layout: FC<ILayoutProps> = ({ children, title, description }) => {
 		<>
 			<Meta title={title} description={description} />
 			<Header />
-
 			<div className={styles.wrapper}>
 				<main>{children}</main>
 			</div>
-
 			<Footer />
 		</>
 	)

@@ -25,17 +25,19 @@ const steps = [
 
 export const Steps: FC = () => {
 	return (
-		<section className={styles.wrapper}>
-			<Htag tag='h2'>3 STEPS TO THE PERFECT TRIP</Htag>
-			<div className={styles.steps}>
-				{steps.map((s) => (
-					<div key={s.id} className={styles.step}>
-						<span className={styles.stepIcon}>{s.icon}</span>
-						<Htag tag='h4' className={styles.stepText}>
-							{s.text}
-						</Htag>
-					</div>
-				))}
+		<section className={styles.steps}>
+			<div className={styles.wrapper}>
+				<Htag tag='h2'>3 STEPS TO THE PERFECT TRIP</Htag>
+				<ul className={styles.stepsList}>
+					{steps.map((s) => (
+						<li key={s.id} className={styles.step}>
+							<span className={styles.stepIcon}>{s.icon}</span>
+							<Htag tag='h4' className={styles.stepText}>
+								{s.text}
+							</Htag>
+						</li>
+					))}
+				</ul>
 			</div>
 		</section>
 	)
