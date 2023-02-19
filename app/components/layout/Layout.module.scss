@@ -1,9 +1,5 @@
 @import 'styles/scss/variables.scss';
 
-.page {
-	padding: 0 $pagePadding;
-	.wrapper {
-		margin: 0 auto;
-		max-width: $maxWidth;
-	}
+.wrapper {
+	margin: 0;
 }

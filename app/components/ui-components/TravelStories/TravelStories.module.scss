@@ -1,0 +1,64 @@
+@import 'styles/scss/variables.scss';
+
+.htag {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+.stories {
+	padding-bottom: 61px;
+	background: no-repeat center bottom url('/images/stories-bg.png');
+	background-size: cover;
+	.bgColor {
+		padding: 40px 0 34px;
+		background-color: $bgWhite;
+	}
+	.wrapper {
+		max-width: $maxWidth;
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+		align-items: center;
+		margin: 0 auto;
+		padding: 0 $pagePadding;
+
+		.storiesList {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+
+			.storyItem {
+				display: flex;
+				flex-direction: row;
+				gap: 40px;
+				padding: 15px 10px;
+				border-radius: $borderRadius;
+				cursor: pointer;
+				transition: all ease-in-out 0.5s;
+
+				&:hover {
+					background-color: rgba($color: #fff, $alpha: 0.9);
+					box-shadow: $shadow;
+					.storyLink {
+						color: $orange;
+					}
+				}
+				.storyLink {
+					text-decoration: underline;
+					color: $green;
+					font-family: $aleoFontFamily;
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					transition: all ease-in-out 0.5s;
+				}
+
+				.storyDesc {
+					display: flex;
+					flex-direction: column;
+					gap: 24px;
+				}
+			}
+		}
+	}
+}

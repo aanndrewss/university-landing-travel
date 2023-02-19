@@ -2,9 +2,11 @@
 
 .wrapper {
 	margin-top: 100px;
-	.htag {
-		text-align: center;
-	}
+	max-width: $maxWidth;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
 	.steps {
 		display: flex;
 		flex-direction: row;

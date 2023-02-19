@@ -34,6 +34,7 @@ export const Destinations: FC = () => {
 				slidesPerView={2}
 				spaceBetween={200}
 				centeredSlides={true}
+				autoplay={{ delay: 3000 }}
 				initialSlide={1}
 				className={styles.swiper}
 				pagination={{ clickable: true }}

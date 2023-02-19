@@ -26,9 +26,7 @@ const steps = [
 export const Steps: FC = () => {
 	return (
 		<section className={styles.wrapper}>
-			<Htag tag='h2' className={styles.htag}>
-				3 STEPS TO THE PERFECT TRIP
-			</Htag>
+			<Htag tag='h2'>3 STEPS TO THE PERFECT TRIP</Htag>
 			<div className={styles.steps}>
 				{steps.map((s) => (
 					<div key={s.id} className={styles.step}>
