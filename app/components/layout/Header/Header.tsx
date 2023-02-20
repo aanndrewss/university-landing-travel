@@ -1,5 +1,6 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { Button } from '../../ui'
+import { DialogLogin } from './DialogLogin/DialogLogin'
 import styles from './Header.module.scss'
 import Logo from './logo.svg'
 
@@ -23,6 +24,8 @@ const links = [
 ]
 
 const Header: FC = () => {
+	const [isOpen, setIsOpen] = useState<boolean>(false)
+
 	return (
 		<header className={styles.header}>
 			<div className={styles.wrapper}>
@@ -37,7 +40,8 @@ const Header: FC = () => {
 						</a>
 					))}
 				</nav>
-				<Button>Login</Button>
+				<Button onClick={() => setIsOpen(true)}>Login</Button>
+				{isOpen && <DialogLogin isOpen={isOpen} setIsOpen={setIsOpen} />}
 			</div>
 		</header>
 	)
