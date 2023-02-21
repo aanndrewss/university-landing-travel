@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion'
 import { FC, useState } from 'react'
 import { Button } from '../../ui'
 import { DialogLogin } from './DialogLogin/DialogLogin'
@@ -41,7 +42,9 @@ const Header: FC = () => {
 					))}
 				</nav>
 				<Button onClick={() => setIsOpen(true)}>Login</Button>
-				{isOpen && <DialogLogin isOpen={isOpen} setIsOpen={setIsOpen} />}
+				<AnimatePresence>
+					{isOpen && <DialogLogin isOpen={isOpen} setIsOpen={setIsOpen} />}
+				</AnimatePresence>
 			</div>
 		</header>
 	)

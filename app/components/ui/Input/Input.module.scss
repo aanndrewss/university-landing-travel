@@ -1,0 +1,14 @@
+@import 'styles/scss/variables.scss';
+
+.input {
+	border-radius: $borderRadius;
+	box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08),
+		inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+	background-color: white;
+	outline: none;
+	border: none;
+	padding: 7px 15px;
+	height: 39px;
+	width: 100%;
+	color: $green;
+}
