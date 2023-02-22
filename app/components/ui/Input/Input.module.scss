@@ -8,7 +8,19 @@
 	outline: none;
 	border: none;
 	padding: 7px 15px;
-	height: 39px;
+	height: 47px;
 	width: 100%;
 	color: $green;
+}
+
+.error {
+	border: 1px solid $red;
+}
+
+.errorMessage {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+
+	color: var(--red);
 }
