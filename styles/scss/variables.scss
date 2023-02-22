@@ -1,3 +1,4 @@
+@import '_media.scss';
 //page constants
 $maxWidth: 1440px;
 $pagePadding: 40px;
@@ -20,3 +21,41 @@ $shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
 $aleoFontFamily: 'Aleo', serif;
 $redHatTextFontFamily: 'Red Hat Text', sans-serif;
 $magraFontFamily: 'Magra', sans-serif;
+
+//fonts-size
+$font-size-normal: 16px;
+$font-size-normal-2: 20px;
+$font-size-normal-3: 24px;
+$font-size-middle: 32px;
+$font-size-middle-2: 35px;
+$font-size-middle-3: 40px;
+$font-size-big: 80px;
+
+//line-height
+$line-height-normal: 21px;
+$line-height-normal-2: 24px;
+$line-height-normal-3: 32px;
+$line-height-middle: 42px;
+$line-height-middle-2: 42px;
+$line-height-middle-3: 53px;
+$line-height-big: 96px;
+
+@include media(tablet) {
+	//fonts-size
+	$font-size-normal: 16px;
+	$font-size-normal-2: 20px;
+	$font-size-normal-3: 24px;
+	$font-size-middle: 32px;
+	$font-size-middle-2: 35px;
+	$font-size-middle-3: 40px;
+	$font-size-big: 60px;
+
+	//line-height
+	$line-height-normal: 21px;
+	$line-height-normal-2: 24px;
+	$line-height-normal-3: 32px;
+	$line-height-middle: 42px;
+	$line-height-middle-2: 42px;
+	$line-height-middle-3: 53px;
+	$line-height-big: 96px;
+}

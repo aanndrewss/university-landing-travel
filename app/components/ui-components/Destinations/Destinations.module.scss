@@ -32,7 +32,7 @@
 				bottom: 40px;
 				font-family: $redHatTextFontFamily;
 				font-weight: 500;
-				font-size: 32px;
+				font-size: $font-size-middle;
 				line-height: 42px;
 			}
 		}
@@ -42,7 +42,7 @@
 		flex-direction: row;
 		gap: 10px;
 		align-items: center;
-		font-size: 24px;
+		font-size: $font-size-normal-3;
 		line-height: 32px;
 	}
 }

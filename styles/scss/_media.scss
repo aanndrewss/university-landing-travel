@@ -1,5 +1,4 @@
-$laptop: 1024px;
-$tablet: 768px;
+$tablet: 1024px;
 $mobile: 480px;
 
 @mixin media($media) {
@@ -9,10 +8,6 @@ $mobile: 480px;
 		}
 	} @else if $media == tablet {
 		@media only screen and (max-width: $tablet) {
-			@content;
-		}
-	} @else if $media == laptop {
-		@media only screen and (max-width: $laptop) {
 			@content;
 		}
 	}

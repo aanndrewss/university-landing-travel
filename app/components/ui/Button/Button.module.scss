@@ -2,8 +2,8 @@
 
 .button {
 	padding: 10px 30px;
-	font-size: 16px;
-	line-height: 21px;
+	font-size: $font-size-normal;
+	line-height: $line-height-normal;
 	background-color: $green;
 	border-radius: $borderRadius;
 	font-family: $redHatTextFontFamily;
