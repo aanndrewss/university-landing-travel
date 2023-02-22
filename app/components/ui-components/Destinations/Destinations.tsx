@@ -32,7 +32,7 @@ export const Destinations: FC = () => {
 			<Htag tag='h2'>POPULAR DESTINATIONS</Htag>
 			<Swiper
 				slidesPerView={2}
-				spaceBetween={200}
+				spaceBetween={100}
 				centeredSlides={true}
 				autoplay={{ delay: 3000 }}
 				initialSlide={1}

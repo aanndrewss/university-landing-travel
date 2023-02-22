@@ -19,18 +19,17 @@
 		.swiperSlide {
 			display: flex;
 			justify-content: center;
-			align-items: center;
 
 			.sliderImg {
-				display: block;
-
 				object-fit: cover;
+				max-width: 100%;
+				height: auto;
 				border-radius: 16px;
 			}
 			.sliderText {
 				position: absolute;
-				left: calc(50% - 100px / 2 - 300px);
 				bottom: 40px;
+				left: 25px;
 				font-family: $redHatTextFontFamily;
 				font-weight: 500;
 				font-size: 32px;

@@ -30,6 +30,7 @@
 			.storyItem {
 				display: flex;
 				flex-direction: row;
+				align-items: center;
 				gap: 40px;
 				padding: 15px 10px;
 				border-radius: $borderRadius;
