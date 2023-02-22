@@ -1,41 +1,44 @@
 @import 'styles/scss/variables.scss';
 
-.wrapper {
-	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
-	width: 892px;
-	gap: 46px;
-	height: calc(100vh - 140px);
+.section {
 	max-width: $maxWidth;
+	margin: 0 auto;
 	padding: 0 $pagePadding;
-
-	.tag {
-		font-style: italic;
-	}
-
-	.box {
-		background: rgba(255, 255, 255, 0.7);
-		border-radius: 16px;
-		padding: 18px;
+	.wrapper {
+		margin-top: 50px;
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+		flex-direction: column;
+		width: 892px;
+		gap: 46px;
+		height: calc(100vh - 140px);
 
-		.boxText {
-			color: $orange;
-			font-family: $aleoFontFamily;
-			font-weight: 400;
+		.tag {
 			font-style: italic;
-			font-size: 24px;
-			line-height: 29px;
-			margin-left: 20px;
 		}
-		.boxBtn {
-			padding: 13.5px 33.5px;
-			font-size: 24px;
-			line-height: 32px;
+
+		.box {
+			background: rgba(255, 255, 255, 0.7);
+			border-radius: 16px;
+			padding: 18px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			.boxText {
+				color: $orange;
+				font-family: $aleoFontFamily;
+				font-weight: 400;
+				font-style: italic;
+				font-size: 24px;
+				line-height: 29px;
+				margin-left: 20px;
+			}
+			.boxBtn {
+				padding: 13.5px 33.5px;
+				font-size: 24px;
+				line-height: 32px;
+			}
 		}
 	}
 }
