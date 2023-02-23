@@ -28,7 +28,6 @@ const links = [
 
 const Header: FC = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
-	const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
 
 	return (
 		<header className={styles.header}>

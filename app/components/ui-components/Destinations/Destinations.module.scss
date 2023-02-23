@@ -11,9 +11,12 @@
 
 	@include media(tablet) {
 		margin-top: 40px;
+		gap: 30px;
 	}
 	@include media(mobile) {
 		margin-top: 20px;
+		gap: 20px;
+		padding: 0 15px;
 	}
 
 	.swiper {
@@ -36,12 +39,15 @@
 			}
 			.sliderText {
 				position: absolute;
-				left: 7%;
+				left: 9%;
 				bottom: 40px;
 				font-family: $redHatTextFontFamily;
 				font-weight: 500;
 				font-size: var(--font-size-middle);
 				line-height: var(--line-height-middle);
+				@include media(tablet) {
+					top: 8px;
+				}
 			}
 		}
 	}
