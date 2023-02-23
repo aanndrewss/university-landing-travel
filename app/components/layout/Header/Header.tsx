@@ -1,9 +1,11 @@
+import { Menu } from '@headlessui/react'
 import { AnimatePresence } from 'framer-motion'
 import { FC, useState } from 'react'
 import { Button } from '../../ui'
 import { DialogLogin } from './DialogLogin/DialogLogin'
 import styles from './Header.module.scss'
 import Logo from './logo.svg'
+import MenuIcon from './menu.svg'
 
 const links = [
 	{
@@ -26,6 +28,7 @@ const links = [
 
 const Header: FC = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
+	const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
 
 	return (
 		<header className={styles.header}>
@@ -41,7 +44,22 @@ const Header: FC = () => {
 						</a>
 					))}
 				</nav>
-				<Button onClick={() => setIsOpen(true)}>Login</Button>
+				<Button className={styles.logInBtn} onClick={() => setIsOpen(true)}>
+					Login
+				</Button>
+
+				<Menu as='div' className={styles.menu}>
+					<Menu.Button className={styles.menuBtn}>
+						<MenuIcon />
+					</Menu.Button>
+					<Menu.Items className={styles.menuList}>
+						{links.map((l) => (
+							<Menu.Item key={l.id}>
+								<a>{l.link}</a>
+							</Menu.Item>
+						))}
+					</Menu.Items>
+				</Menu>
 				<AnimatePresence>
 					{isOpen && <DialogLogin isOpen={isOpen} setIsOpen={setIsOpen} />}
 				</AnimatePresence>

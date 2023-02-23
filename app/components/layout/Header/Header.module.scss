@@ -1,11 +1,16 @@
 @import 'styles/scss/variables.scss';
+@import 'styles/scss/_media.scss';
 
 .header {
 	background-color: rgba($color: $orange, $alpha: 0.7);
 	height: 90px;
 	width: 100%;
-
+	position: absolute;
 	box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+	@include media(tablet) {
+		background-color: transparent;
+		box-shadow: none;
+	}
 	.wrapper {
 		max-width: $maxWidth;
 		display: flex;
@@ -14,17 +19,55 @@
 		align-items: center;
 		margin: 0 auto;
 		padding: 25px $pagePadding;
+		@include media(tablet) {
+			padding: 43px 16px;
+		}
 
 		.logo {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			gap: 5px;
+			transition: all 0.3s ease-in;
+			&:hover {
+				color: $greenHover;
+			}
 
 			.logoText {
 				font-family: $magraFontFamily;
-				font-size: 32px;
-				line-height: 39px;
+				font-size: var(--font-size-normal-3);
+				line-height: var(--line-height-normal-3);
+				@include media(laptop) {
+					display: none;
+				}
+			}
+		}
+
+		.logInBtn {
+			display: block;
+			@include media(tablet) {
+				display: none;
+			}
+		}
+
+		.menu {
+			display: none;
+			@include media(tablet) {
+				display: block;
+			}
+			.menuBtn {
+				background: transparent;
+				border: none;
+				cursor: pointer;
+			}
+			.menuList {
+				position: absolute;
+				background: $orange;
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				right: 20px;
 			}
 		}
 
@@ -33,12 +76,15 @@
 			justify-content: space-between;
 			align-items: center;
 			gap: 42px;
+			@include media(tablet) {
+				display: none;
+			}
 
 			.headerLink {
 				cursor: pointer;
 				font-family: $redHatTextFontFamily;
-				font-size: 16px;
-				line-height: 21px;
+				font-size: var(--font-size-normal);
+				line-height: var(--line-height-normal);
 				font-weight: 500px;
 				transition: all 0.3s;
 				&:hover {

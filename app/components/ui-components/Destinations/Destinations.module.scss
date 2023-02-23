@@ -32,8 +32,8 @@
 				bottom: 40px;
 				font-family: $redHatTextFontFamily;
 				font-weight: 500;
-				font-size: $font-size-middle;
-				line-height: 42px;
+				font-size: var(--font-size-middle);
+				line-height: var(--line-height-middle);
 			}
 		}
 	}
@@ -42,7 +42,7 @@
 		flex-direction: row;
 		gap: 10px;
 		align-items: center;
-		font-size: $font-size-normal-3;
-		line-height: 32px;
+		font-size: var(--font-size-normal-3);
+		line-height: var(--line-height-normal-3);
 	}
 }

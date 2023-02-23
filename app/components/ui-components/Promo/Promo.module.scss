@@ -11,12 +11,21 @@
 		flex-direction: column;
 		width: 892px;
 		gap: 46px;
-		height: calc(100vh - 140px);
-		@include media(tablet) {
+
+		@include media(laptop) {
 			width: 100%;
 		}
-		.tag {
+
+		.title {
 			font-style: italic;
+			@include media(tablet) {
+				display: none;
+			}
+		}
+		.titleBig {
+			@include media(tablet) {
+				display: none;
+			}
 		}
 
 		.box {
@@ -27,20 +36,26 @@
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			@include media(tablet) {
+				padding: 16px;
+			}
 
 			.boxText {
 				color: $orange;
 				font-family: $aleoFontFamily;
 				font-weight: 400;
 				font-style: italic;
-				font-size: $font-size-normal-3;
-				line-height: 29px;
+				font-size: var(--font-size-normal-2);
+				line-height: var(--line-height-normal-2);
 				margin-left: 20px;
 			}
 			.boxBtn {
 				padding: 13.5px 33.5px;
-				font-size: $font-size-normal-3;
-				line-height: 32px;
+				font-size: var(--font-size-normal-3);
+				line-height: var(--line-height-normal-3);
+				@include media(tablet) {
+					padding: 7.5px 9px;
+				}
 			}
 		}
 	}

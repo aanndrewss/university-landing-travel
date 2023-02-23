@@ -10,14 +10,14 @@ import styles from './Home.module.scss'
 
 const Home: FC = () => {
 	return (
-		<div className={styles.bg}>
-			<Layout title='Home' description='Made by andrxw66'>
+		<Layout title='Home' description='Made by andrxw66'>
+			<div className={styles.bg}>
 				<Promo />
-				<Steps />
-				<Destinations />
-				<TravelStories />
-			</Layout>
-		</div>
+			</div>
+			<Steps />
+			<Destinations />
+			<TravelStories />
+		</Layout>
 	)
 }
 

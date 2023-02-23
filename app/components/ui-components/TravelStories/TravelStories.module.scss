@@ -49,7 +49,7 @@
 					color: $green;
 					font-family: $aleoFontFamily;
 					font-weight: 700;
-					font-size: $font-size-normal-2;
+					font-size: var(--font-size-normal-2);
 					line-height: 24px;
 					transition: all ease-in-out 0.5s;
 				}
