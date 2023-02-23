@@ -59,7 +59,11 @@
 					color: $green;
 					text-align: center;
 					@include media(tablet) {
-						width: 100px;
+						width: 120px;
+						word-wrap: break-word;
+					}
+					@include media(mobile) {
+						width: 90px;
 					}
 				}
 			}
