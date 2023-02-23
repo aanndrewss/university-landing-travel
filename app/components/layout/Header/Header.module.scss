@@ -65,9 +65,17 @@
 				background: $orange;
 				padding: 20px;
 				display: flex;
+				border-radius: 16px;
 				flex-direction: column;
+				box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+				width: 165px;
 				align-items: center;
+				gap: 10px;
 				right: 20px;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 21px;
+				font-family: $redHatTextFontFamily;
 			}
 		}
 

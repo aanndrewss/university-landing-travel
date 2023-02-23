@@ -57,6 +57,12 @@ const Header: FC = () => {
 								<a>{l.link}</a>
 							</Menu.Item>
 						))}
+						<Menu.Item>
+							<a>Account</a>
+						</Menu.Item>
+						<Menu.Item>
+							<a>Socials</a>
+						</Menu.Item>
 					</Menu.Items>
 				</Menu>
 				<AnimatePresence>

@@ -33,7 +33,6 @@ const destinations = [
 
 export const Destinations: FC = () => {
 	const matches = useMediaQuery('only screen and (min-width: 760px)')
-	console.log(matches)
 	return (
 		<section className={styles.wrapper}>
 			<Htag tag='h2'>POPULAR DESTINATIONS</Htag>
