@@ -1,8 +1,15 @@
 @import 'styles/scss/variables.scss';
-
+@import 'styles/scss/_media.scss';
 .steps {
 	margin-top: 100px;
 	padding: 0 $pagePadding;
+	@include media(tablet) {
+		margin-top: 40px;
+	}
+	@include media(mobile) {
+		margin-top: 20px;
+		padding: 0 15px;
+	}
 	.wrapper {
 		max-width: $maxWidth;
 		display: flex;
@@ -11,15 +18,25 @@
 		margin: 0 auto;
 		.stepsList {
 			display: flex;
+			width: 100%;
 			flex-direction: row;
-			gap: 160px;
+			justify-content: space-around;
 			margin-top: 40px;
+			@include media(tablet) {
+				margin-top: 30px;
+			}
+			@include media(mobile) {
+				margin-top: 20px;
+			}
 			.step {
 				display: flex;
 				flex-direction: column;
 				gap: 30px;
 				justify-content: center;
 				align-items: center;
+				@include media(mobile) {
+					gap: 20px;
+				}
 
 				.stepIcon {
 					width: 100px;
@@ -29,10 +46,21 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					@include media(tablet) {
+						width: 80px;
+						height: 80px;
+					}
+					@include media(mobile) {
+						width: 70px;
+						height: 70px;
+					}
 				}
 				.stepText {
 					color: $green;
 					text-align: center;
+					@include media(tablet) {
+						width: 100px;
+					}
 				}
 			}
 		}
