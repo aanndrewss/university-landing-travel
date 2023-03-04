@@ -3,6 +3,7 @@
 	background-image: url('/images/bg-1.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hidden;
 	padding: 122px 0 255px;
 	@include media(tablet) {
 		background-image: url('/images/bg-1-mobile.png');

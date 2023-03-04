@@ -1,12 +1,12 @@
-import { useMediaQuery } from '@react-hook/media-query'
+import useMediaQuery from '@/app/hooks/useMediaQuery'
 import { FC } from 'react'
 import { Htag } from '../../ui/Htag/Htag'
-import Step1 from './icons/step1.svg'
-import Step2 from './icons/step2.svg'
-import Step3 from './icons/step3.svg'
 import Step1Mobile from './icons/step1-mobile.svg'
+import Step1 from './icons/step1.svg'
 import Step2Mobile from './icons/step2-mobile.svg'
+import Step2 from './icons/step2.svg'
 import Step3Mobile from './icons/step3-mobile.svg'
+import Step3 from './icons/step3.svg'
 import styles from './Steps.module.scss'
 
 const steps = [
@@ -31,7 +31,7 @@ const steps = [
 ]
 
 export const Steps: FC = () => {
-	const matches = useMediaQuery('only screen and (min-width: 760px)')
+	const matches = useMediaQuery('only screen and (max-width: 760px)')
 	return (
 		<section className={styles.steps}>
 			<div className={styles.wrapper}>
@@ -40,7 +40,7 @@ export const Steps: FC = () => {
 					{steps.map((s) => (
 						<li key={s.id} className={styles.step}>
 							<span className={styles.stepIcon}>
-								{matches ? s.icon : s.mobileIcon}
+								{matches ? s.mobileIcon : s.icon}
 							</span>
 							<Htag tag='h4' className={styles.stepText}>
 								{s.text}

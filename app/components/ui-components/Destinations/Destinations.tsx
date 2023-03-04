@@ -1,4 +1,4 @@
-import { useMediaQuery } from '@react-hook/media-query'
+import useMediaQuery from '@/app/hooks/useMediaQuery'
 import { FC } from 'react'
 import { Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -14,32 +14,32 @@ const destinations = [
 	{
 		id: 1,
 		country: 'JAPAN',
-		img: './images/japan.png',
-		mobileImg: './images/japan-mobile.png'
+		img: '/images/japan.png',
+		mobileImg: '/images/japan-mobile.png'
 	},
 	{
 		id: 2,
 		country: 'USA',
-		img: './images/usa.png',
-		mobileImg: './images/usa-mobile.png'
+		img: '/images/usa.png',
+		mobileImg: '/images/usa-mobile.png'
 	},
 	{
 		id: 3,
 		country: 'SPAIN',
-		img: './images/spain.png',
-		mobileImg: './images/spain-mobile.png'
+		img: '/images/spain.png',
+		mobileImg: '/images/spain-mobile.png'
 	}
 ]
 
 export const Destinations: FC = () => {
-	const matches = useMediaQuery('only screen and (min-width: 760px)')
+	const matches = useMediaQuery('only screen and (max-width: 760px)')
 	return (
 		<section className={styles.wrapper}>
 			<Htag tag='h2'>POPULAR DESTINATIONS</Htag>
 			<Swiper
-				slidesPerView={matches ? 2 : 1}
+				slidesPerView={matches ? 1 : 2}
 				spaceBetween={100}
-				centeredSlides={matches}
+				centeredSlides={!matches}
 				autoplay={{ delay: 3000 }}
 				initialSlide={1}
 				className={styles.swiper}
@@ -51,7 +51,7 @@ export const Destinations: FC = () => {
 					<SwiperSlide tag='li' className={styles.swiperSlide} key={d.id}>
 						<img
 							className={styles.sliderImg}
-							src={matches ? d.img : d.mobileImg}
+							src={matches ? d.mobileImg : d.img}
 							alt={d.country}
 						/>
 						<span className={styles.sliderText}>{d.country}</span>
@@ -59,7 +59,7 @@ export const Destinations: FC = () => {
 				))}
 			</Swiper>
 			<Button className={styles.findBtn}>
-				{matches ? <ArrowRight /> : <ArrowRightMobile />}
+				{matches ? <ArrowRightMobile /> : <ArrowRight />}
 				Find More
 			</Button>
 		</section>

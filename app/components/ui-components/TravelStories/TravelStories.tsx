@@ -1,4 +1,4 @@
-import { useMediaQuery } from '@react-hook/media-query'
+import useMediaQuery from '@/app/hooks/useMediaQuery'
 import { FC } from 'react'
 import { P } from '../../ui'
 import { Htag } from '../../ui/Htag/Htag'
@@ -40,7 +40,7 @@ const stories = [
 ]
 
 export const TravelStories: FC = () => {
-	const matches = useMediaQuery('only screen and (min-width: 760px)')
+	const matches = useMediaQuery('only screen and (max-width: 760px)')
 	return (
 		<>
 			<Htag tag='h2' className={styles.htag}>
@@ -54,7 +54,7 @@ export const TravelStories: FC = () => {
 								<li key={s.id} className={styles.storyItem}>
 									<img
 										className={styles.storyImg}
-										src={matches ? s.img : s.mobileImg}
+										src={matches ? s.mobileImg : s.img}
 										alt={s.title}
 									/>
 									<div className={styles.storyDesc}>
